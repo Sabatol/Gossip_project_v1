@@ -1,0 +1,3 @@
+Vous êtes en présence d'un readme généré automatiquement !
+
+...Bon. Si vous êtes là, c'est forcément que j'ai oublié quelque chose...
