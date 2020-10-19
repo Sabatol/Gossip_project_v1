@@ -6,11 +6,14 @@
   </head>
   <body>
     <h1>Bienvenu</h1>
-    <p>La cration des potins arrive , en attendant tu peu aller créer des potins <a href="/gossips/new/"> >>>ici<<< </a> </p>
-    <% gossips.each do |gossip| %>
+    <p>La création des potins arrive ! En attendant tu peux aller créer des potins <a href="/gossips/new/"> >>>ici<<< </a> </p>
+    <p>Voici la liste des potins déjà enregistrés !</p>
+    <% gossips.each_with_index do |gossip, i| %>
         <p>
+          <a href="/gossips/<%= i %>">
           <%= gossip.author %><br/>
           <%= gossip.content %>
+          </a>
         </p>
       <% end %>
   </body>
